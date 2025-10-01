@@ -1,84 +1,160 @@
-<!-- Inside <head> -->
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-<style>
-  body {
-    font-family: 'Quicksand', sans-serif;
-    margin: 0;
-    background-color: #f9f6fb;
-    color: #333;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PediPigeon</title>
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-  .hero {
-    background-color: #007B76;
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-  }
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      background-color: #f9f6fb;
+      color: #333;
+    }
 
-  .hero h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
-  }
+    .hero {
+      background-color: #007B76;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
 
-  .hero p {
-    font-size: 20px;
-    margin-bottom: 30px;
-  }
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
 
-  .buttons a {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 24px;
-    background-color: #ffffff;
-    color: #007B76;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: 600;
-    border: 2px solid #007B76;
-    transition: all 0.3s ease;
-  }
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
 
-  .buttons a:hover {
-    background-color: #007B76;
-    color: white;
-  }
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background-color: #ffffff;
+      color: #007B76;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      border: 2px solid #007B76;
+      transition: all 0.3s ease;
+    }
 
-  .section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
-    margin-bottom: 20px;
-  }
+    .buttons a:hover {
+      background-color: #007B76;
+      color: white;
+    }
 
-  .section h2 {
-    text-align: center;
-    color: #007B76;
-  }
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 30px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    }
 
-  .features li {
-    margin: 10px 0;
-    font-size: 18px;
-  }
+    .section h2 {
+      text-align: center;
+      color: #007B76;
+    }
 
-  .screenshots {
-    text-align: center;
-  }
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
 
-  .screenshots img {
-    width: 260px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
+    .features li {
+      margin: 12px 0;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
-  footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-    background-color: #eaeaea;
-    color: #444;
-  }
-</style>
+    .features li::before {
+      content: "✔️";
+    }
+
+    .screenshots {
+      text-align: center;
+    }
+
+    .screenshots img {
+      width: 260px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background-color: #eaeaea;
+      color: #444;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .screenshots img {
+        width: 90%;
+        max-width: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>PediPigeon</h1>
+    <p>Track your pigeons' pedigree, breeding history & strain data with ease.</p>
+    <div class="buttons">
+      <a href="https://yourdomain.com/downloads/android-trial.apk">📱 Download for Android</a>
+      <a href="https://yourdomain.com/downloads/windows-trial.zip">🪟 Download for Windows</a>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <div class="section features">
+    <h2>✨ Features</h2>
+    <ul>
+      <li>Family Tree up to 3 generations</li>
+      <li>Breeding history with partner & offspring tracking</li>
+      <li>Strain breakdown with percentage calculation</li>
+      <li>Bird profiles with images & details</li>
+      <li>Powerful filters and clean visual design</li>
+    </ul>
+  </div>
+
+  <!-- SCREENSHOTS -->
+  <div class="section screenshots">
+    <h2>📸 App Screenshots</h2>
+    <img src="screenshots/screen1.png" alt="App Screenshot 1">
+    <img src="screenshots/screen2.png" alt="App Screenshot 2">
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 PediPigeon • Contact: <a href="mailto:you@example.com">you@example.com</a>
+  </footer>
+
+</body>
+</html>
