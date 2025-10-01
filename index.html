@@ -1,102 +1,84 @@
-html_code = """
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PigeonBreeder Pro</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    .hero {
-      background-color: #336699;
-      color: white;
-      padding: 100px 20px;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
-    .buttons a {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 24px;
-      background-color: #ffcc00;
-      color: black;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-    .section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .features li {
-      margin: 10px 0;
-      font-size: 18px;
-    }
-    .screenshots img {
-      width: 280px;
-      margin: 10px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      background-color: #ddd;
-    }
-  </style>
-</head>
-<body>
+<!-- Inside <head> -->
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    background-color: #f9f6fb;
+    color: #333;
+  }
 
-  <div class="hero">
-    <h1>PigeonBreeder Pro</h1>
-    <p>Track your pigeons' pedigree, breeding history & strain analysis.</p>
-    <div class="buttons">
-      <a href="https://yourdomain.com/downloads/android-trial.apk">📱 Download for Android</a>
-      <a href="https://yourdomain.com/downloads/windows-trial.zip">🪟 Download for Windows</a>
-    </div>
-  </div>
+  .hero {
+    background-color: #007B76;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
 
-  <div class="section features">
-    <h2>✨ Features</h2>
-    <ul>
-      <li>📊 Family Tree up to 3 generations</li>
-      <li>🧬 Breeding history with partner/offspring tracking</li>
-      <li>🎨 Breed strain breakdown with percentages</li>
-      <li>📷 Image & profile support per bird</li>
-      <li>🔍 Powerful filtering & visual UI</li>
-    </ul>
-  </div>
+  .hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
 
-  <div class="section screenshots">
-    <h2>🖼️ App Screenshots</h2>
-    <img src="screenshots/screen1.png" alt="Screenshot 1">
-    <img src="screenshots/screen2.png" alt="Screenshot 2">
-  </div>
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
 
-  <footer>
-    © 2025 Your Name | Contact: <a href="mailto:you@example.com">you@example.com</a>
-  </footer>
+  .buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    background-color: #ffffff;
+    color: #007B76;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    border: 2px solid #007B76;
+    transition: all 0.3s ease;
+  }
 
-</body>
-</html>
-"""
+  .buttons a:hover {
+    background-color: #007B76;
+    color: white;
+  }
 
-# Save to index.html
-with open("index.html", "w", encoding="utf-8") as f:
-    f.write(html_code)
+  .section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+  }
 
-print("Landing page 'index.html' generated successfully!")
+  .section h2 {
+    text-align: center;
+    color: #007B76;
+  }
+
+  .features li {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  .screenshots {
+    text-align: center;
+  }
+
+  .screenshots img {
+    width: 260px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    background-color: #eaeaea;
+    color: #444;
+  }
+</style>
