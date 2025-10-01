@@ -168,11 +168,49 @@
     <img src="screenshots/screenshot3.PNG" alt="App Screenshot 3">
     <img src="screenshots/screenshot4.PNG" alt="App Screenshot 4">
   </div>
+<!-- Contact Button -->
+<button id="contactBtn" style="position:fixed; bottom:20px; right:20px; background:#007B76; color:#fff; border:none; padding:12px 20px; border-radius:30px; font-weight:bold; cursor:pointer; z-index:1000;">
+  Contact Us
+</button>
+
+<!-- Contact Modal -->
+<div id="contactModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999;">
+  <div style="background:white; padding:20px; max-width:400px; margin:10% auto; border-radius:10px; position:relative;">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required style="width:100%; padding:10px; margin:10px 0;" />
+      <input type="email" id="email" placeholder="Your Email" required style="width:100%; padding:10px; margin:10px 0;" />
+      <textarea id="message" placeholder="Your Message" required style="width:100%; padding:10px; margin:10px 0;" rows="4"></textarea>
+      <button type="submit" style="background:#007B76; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Send Email</button>
+      <a href="https://wa.me/27615484462" target="_blank" style="margin-left:10px; display:inline-block; background:#25D366; color:white; padding:10px 20px; border-radius:5px; text-decoration:none;">WhatsApp</a>
+    </form>
+    <button onclick="closeModal()" style="position:absolute; top:10px; right:15px; background:none; border:none; font-size:18px; cursor:pointer;">×</button>
+  </div>
+</div>
 
   <!-- FOOTER -->
   <footer>
     © 2025 PediPigeon • Contact: <a href="mailto:you@example.com">you@example.com</a>
   </footer>
+<script>
+  const contactBtn = document.getElementById("contactBtn");
+  const contactModal = document.getElementById("contactModal");
+  const contactForm = document.getElementById("contactForm");
 
+  contactBtn.onclick = () => contactModal.style.display = "block";
+  function closeModal() {
+    contactModal.style.display = "none";
+  }
+
+  contactForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+    const mailtoLink = `mailto:fermaloft@gmail.com?subject=Contact from ${name}&body=From: ${name} (${email})%0D%0A%0D%0A${message}`;
+    window.location.href = mailtoLink;
+    closeModal();
+  });
+</script>
 </body>
 </html>
