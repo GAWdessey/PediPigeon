@@ -4,13 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PediPigeon</title>
-  
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
-  
-  <!-- Favicon (optional) -->
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
   <style>
     body {
       font-family: 'Quicksand', sans-serif;
@@ -18,24 +13,20 @@
       background-color: #f9f6fb;
       color: #333;
     }
-
     .hero {
       background-color: #007B76;
       color: white;
       padding: 60px 20px;
       text-align: center;
     }
-
     .hero h1 {
       font-size: 42px;
       margin-bottom: 10px;
     }
-
     .hero p {
       font-size: 20px;
       margin-bottom: 30px;
     }
-
     .buttons a {
       display: inline-block;
       margin: 10px;
@@ -48,12 +39,10 @@
       border: 2px solid #007B76;
       transition: all 0.3s ease;
     }
-
     .buttons a:hover {
       background-color: #007B76;
       color: white;
     }
-
     .section {
       padding: 40px 20px;
       max-width: 900px;
@@ -62,40 +51,33 @@
       border-radius: 12px;
       box-shadow: 0 4px 16px rgba(0,0,0,0.05);
     }
-
     .section h2 {
       text-align: center;
       color: #007B76;
     }
-
-    .features ul {
+    .features ul, .about ul {
       list-style: none;
       padding: 0;
     }
-
-    .features li {
+    .features li, .about li {
       margin: 12px 0;
       font-size: 18px;
       display: flex;
       align-items: center;
       gap: 10px;
     }
-
-    .features li::before {
+    .features li::before, .about li::before {
       content: "✔️";
     }
-
     .screenshots {
       text-align: center;
     }
-
     .screenshots img {
       width: 260px;
       margin: 10px;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
-
     footer {
       text-align: center;
       padding: 20px;
@@ -103,16 +85,13 @@
       background-color: #eaeaea;
       color: #444;
     }
-
     @media (max-width: 600px) {
       .hero h1 {
         font-size: 32px;
       }
-
       .hero p {
         font-size: 16px;
       }
-
       .screenshots img {
         width: 90%;
         max-width: 320px;
@@ -122,99 +101,87 @@
 </head>
 <body>
 
-  <!-- HERO -->
-  <div class="hero">
-    <h1>PediPigeon</h1>
-    <p>Track your pigeons' pedigree, breeding history & strain data with ease.</p>
-    <div class="buttons">
-      <a href="https://github.com/GAWdessey/PediPigeon/releases/download/v1.0-mobiletrial/app-release.apk" target="_blank">
-  📱 Download for Android<br><small>7-day trial • Safe direct download</small>
-</a>
-      <a href="https://github.com/GAWdessey/PediPigeon/releases/download/v1.0-trial/PedipigeonTrialSetup.exe" target="_blank">
-  🪟 Download for Windows<br><small>7-day trial</small>
-</a>
-    </div>
+<!-- HERO -->
+<div class="hero">
+  <h1>PediPigeon</h1>
+  <p>Track your pigeons' pedigree, breeding history & strain data with ease.</p>
+  <div class="buttons">
+    <a href="https://github.com/GAWdessey/PediPigeon/releases/download/v1.0-mobiletrial/app-release.apk" target="_blank">
+      📱 Download for Android<br><small>7-day trial • Safe direct download</small>
+    </a>
+    <a href="https://github.com/GAWdessey/PediPigeon/releases/download/v1.0-trial/PedipigeonTrialSetup.exe" target="_blank">
+      🪟 Download for Windows<br><small>7-day trial</small>
+    </a>
   </div>
+</div>
 
-  <!-- FEATURES -->
-  <div class="section features">
-    <h2>✨ Features</h2>
-    <ul>
-      <li>Family Tree up to 3 generations</li>
-      <li>Breeding history with partner & offspring tracking</li>
-      <li>Strain breakdown with percentage calculation</li>
-      <li>Bird profiles with images & details</li>
-      <li>Powerful filters and clean visual design</li>
-    </ul>
-  </div>
+<!-- FEATURES -->
+<div class="section features">
+  <h2>✨ Features</h2>
+  <ul>
+    <li>Detailed pigeon profiles with ring number, color, DOB, and notes</li>
+    <li>Loan tracking system for birds lent out</li>
+    <li>Advanced genetic analysis for optimal racing category</li>
+    <li>Strain parsing for mixed-breed categorization</li>
+    <li>Offspring prediction including compatibility, color & racing potential</li>
+    <li>Expert commentary explaining pairing strengths/weaknesses</li>
+    <li>Simulate potential pedigrees from cock/hen pairings</li>
+    <li>Track previous pairings and breeding success</li>
+    <li>Master list view with filters by sex and strain</li>
+    <li>Beautiful, clean interface made for loft management</li>
+  </ul>
+</div>
+
+<!-- ABOUT -->
 <div class="section about">
   <h2>📖 About PediPigeon</h2>
-  <p>
-    <strong>PediPigeon</strong> is a smart, Flutter-based mobile app built for passionate pigeon fanciers and breeders. Designed to help you manage your loft like a pro, PediPigeon lets you:
-  </p>
+  <p><strong>PediPigeon</strong> is a powerful pedigree and breeding management tool for pigeon fanciers. Built with Flutter, it helps you make smarter breeding decisions based on data and genetics.</p>
   <ul>
-    <li>🕊️ <strong>Record and manage detailed profiles</strong> for every pigeon — including ring number, breed, color, hatch date, and lineage.</li>
-    <li>💞 <strong>Pair pigeons</strong> and track their breeding history.</li>
-    <li>🌳 <strong>Visualize family trees</strong> across generations.</li>
-    <li>🧬 <strong>Predict offspring characteristics</strong> based on parental genetics — including color and strain.</li>
-    <li>☁️ <strong>Sync your data</strong> (cloud-ready) for backup and access from multiple devices.</li>
-    <li>👤 <strong>Customize your loft</strong> with user profiles and loft info.</li>
+    <li>🧬 <strong>Detailed Records:</strong> Track sex, breed, ring, DOB, color, and even loan history.</li>
+    <li>🔍 <strong>Genetic Analysis:</strong> Calculates optimal distance (Sprint, Middle, Long, etc.) from ancestry.</li>
+    <li>🧪 <strong>Offspring Predictor:</strong> Grades compatibility, predicts color & racing distance, and provides expert commentary.</li>
+    <li>🔁 <strong>Simulation Tool:</strong> See outcomes of potential pairings before mating your birds.</li>
+    <li>📊 <strong>Pairing History:</strong> Review all past mates and their results.</li>
+    <li>📋 <strong>Master List View:</strong> Get quick insights into each bird with filters and search.</li>
+    <li>🌐 <strong>Cross-platform:</strong> Available on Android and Windows with synced features.</li>
   </ul>
-  <p>
-    Whether you're maintaining a competitive racing team or simply preserving prized bloodlines, PediPigeon gives you the tools to breed smarter, manage better, and never lose track of your loft's history.
-  </p>
 </div>
-  <!-- SCREENSHOTS -->
-  <div class="section screenshots">
-    <h2>📸 App Screenshots</h2>
-    <img src="screenshots/screenshot1.PNG" alt="App Screenshot 1">
-    <img src="screenshots/screenshot2.PNG" alt="App Screenshot 2">
-    <img src="screenshots/screenshot3.PNG" alt="App Screenshot 3">
-    <img src="screenshots/screenshot4.PNG" alt="App Screenshot 4">
+
+<!-- SMARTSCREEN WARNING -->
+<div class="section">
+  <h2>⚠️ If Windows Shows a Warning...</h2>
+  <p>When installing PediPigeon, Microsoft Defender SmartScreen might display:</p>
+  <blockquote style="background:#fffbe6; padding:15px; border-left:5px solid #f5c518; font-style:italic;">
+    "Windows protected your PC" – Microsoft Defender SmartScreen prevented an unrecognized app from starting.
+  </blockquote>
+  <p>Don't worry — this happens because the app is new and not yet known to Microsoft.</p>
+  <ol style="padding-left: 20px;">
+    <li>Click <strong>"More info"</strong>.</li>
+    <li>Then click <strong>"Run anyway"</strong>.</li>
+    <li>The installer will continue safely.</li>
+  </ol>
+  <p>This software is verified and made specifically for pigeon loft owners. You can review the source code on <a href="https://github.com/GAWdessey/PediPigeon" target="_blank">GitHub</a>.</p>
+  <div style="text-align:center; margin-top:20px;">
+    <img src="screenshots/smartscreen-example.png" alt="SmartScreen Example" style="max-width:100%; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1); max-height:400px;" />
+    <p style="font-size:14px; color:#777;">Example of SmartScreen message – replace with a real screenshot in the <code>/screenshots</code> folder.</p>
   </div>
-<!-- Contact Button -->
+</div>
+
+<!-- SCREENSHOTS -->
+<div class="section screenshots">
+  <h2>📸 App Screenshots</h2>
+  <img src="screenshots/screenshot1.PNG" alt="App Screenshot 1">
+  <img src="screenshots/screenshot2.PNG" alt="App Screenshot 2">
+  <img src="screenshots/screenshot3.PNG" alt="App Screenshot 3">
+  <img src="screenshots/screenshot4.PNG" alt="App Screenshot 4">
+</div>
+
+<!-- CONTACT BUTTON -->
 <button id="contactBtn" style="position:fixed; bottom:20px; right:20px; background:#007B76; color:#fff; border:none; padding:12px 20px; border-radius:30px; font-weight:bold; cursor:pointer; z-index:1000;">
   Contact Us
 </button>
 
-<!-- Contact Modal -->
+<!-- CONTACT MODAL -->
 <div id="contactModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999;">
   <div style="background:white; padding:20px; max-width:400px; margin:10% auto; border-radius:10px; position:relative;">
-    <h2>Contact Us</h2>
-    <form id="contactForm">
-      <input type="text" id="name" placeholder="Your Name" required style="width:100%; padding:10px; margin:10px 0;" />
-      <input type="email" id="email" placeholder="Your Email" required style="width:100%; padding:10px; margin:10px 0;" />
-      <textarea id="message" placeholder="Your Message" required style="width:100%; padding:10px; margin:10px 0;" rows="4"></textarea>
-      <button type="submit" style="background:#007B76; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Send Email</button>
-      <a href="https://wa.me/27615484462" target="_blank" style="margin-left:10px; display:inline-block; background:#25D366; color:white; padding:10px 20px; border-radius:5px; text-decoration:none;">WhatsApp</a>
-    </form>
-    <button onclick="closeModal()" style="position:absolute; top:10px; right:15px; background:none; border:none; font-size:18px; cursor:pointer;">×</button>
-  </div>
-</div>
-
-  <!-- FOOTER -->
-  <footer>
-    © 2025 PediPigeon • Contact: <a href="mailto:fermaloft@gmail.com">fermaloft@gmail.com</a>
-  </footer>
-<script>
-  const contactBtn = document.getElementById("contactBtn");
-  const contactModal = document.getElementById("contactModal");
-  const contactForm = document.getElementById("contactForm");
-
-  contactBtn.onclick = () => contactModal.style.display = "block";
-  function closeModal() {
-    contactModal.style.display = "none";
-  }
-
-  contactForm.addEventListener("submit", function(e) {
-    e.preventDefault();
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
-    const mailtoLink = `mailto:fermaloft@gmail.com?subject=Contact from ${name}&body=From: ${name} (${email})%0D%0A%0D%0A${message}`;
-    window.location.href = mailtoLink;
-    closeModal();
-  });
-</script>
-</body>
-</html>
+    <h2>Contact Us
